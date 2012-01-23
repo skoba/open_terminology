@@ -1,0 +1,4 @@
+== Open terminology
+
+This project is terminology service as open source software.
+Everybody can edit terminology for use.
