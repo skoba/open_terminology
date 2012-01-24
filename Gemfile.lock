@@ -28,9 +28,11 @@ GEM
     activesupport (3.2.0)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    addressable (2.2.6)
     archive-tar-minitar (0.5.2)
     arel (3.0.0)
     bcrypt-ruby (3.0.1)
+    blankslate (2.1.2.4)
     builder (3.0.0)
     coffee-rails (3.2.1)
       coffee-script (>= 2.2.0)
@@ -45,7 +47,11 @@ GEM
       orm_adapter (~> 0.0.3)
       warden (~> 1.1)
     diff-lcs (1.1.3)
+    em-websocket (0.3.6)
+      addressable (>= 2.1.1)
+      eventmachine (>= 0.12.9)
     erubis (2.7.0)
+    eventmachine (0.12.10)
     execjs (1.3.0)
       multi_json (~> 1.0)
     fabrication (1.2.0)
@@ -54,6 +60,10 @@ GEM
     guard (1.0.0)
       ffi (>= 0.5.0)
       thor (~> 0.14.6)
+    guard-livereload (0.4.0)
+      em-websocket (>= 0.2.0)
+      guard (>= 0.10.0)
+      multi_json (~> 1.0.3)
     guard-rspec (0.6.0)
       guard (>= 0.10.0)
     guard-spork (0.5.1)
@@ -61,6 +71,9 @@ GEM
       spork (>= 0.8.4)
     hike (1.2.1)
     i18n (0.6.0)
+    jbuilder (0.3.2)
+      activesupport (>= 3.0.0)
+      blankslate (>= 2.1.2.4)
     journey (1.0.0)
     jquery-rails (2.0.0)
       railties (>= 3.2.0.beta, < 5.0)
@@ -93,6 +106,8 @@ GEM
       activesupport (= 3.2.0)
       bundler (~> 1.0)
       railties (= 3.2.0)
+    rails3-generators (0.17.4)
+      railties (>= 3.0.0)
     railties (3.2.0)
       actionpack (= 3.2.0)
       activesupport (= 3.2.0)
@@ -143,7 +158,6 @@ GEM
       hike (~> 1.2)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sqlite3 (1.3.5)
     thor (0.14.6)
     tilt (1.3.3)
     treetop (1.4.10)
@@ -164,12 +178,15 @@ DEPENDENCIES
   devise
   fabrication
   forgery
+  guard-livereload
   guard-rspec
   guard-spork
+  jbuilder
   jquery-rails
   libnotify
   pg
   rails (= 3.2.0)
+  rails3-generators
   rspec
   rspec-rails
   ruby-debug19
@@ -177,5 +194,4 @@ DEPENDENCIES
   simplecov
   spork (~> 1.0rc)
   spork-rails
-  sqlite3
   uglifier (>= 1.0.3)

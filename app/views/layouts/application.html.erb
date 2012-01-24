@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Terminology</title>
+  <title>Open Terminology</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -9,7 +9,20 @@
 <body>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
-
-<%= yield %>
+<div id="banner">
+  Open Terminology
+</div>
+<div id="columns">
+  <div id="side">
+    <ul>
+      <li><a href="./language">Language</a></li>
+      <li><a href="./terminology">Terminology</a></li>
+      <li><a href="./instruction">Instruction</a></li>
+    </ul>
+  </div>
+  <div id="main">
+    <%= yield %>
+  </div>
+</div>
 </body>
 </html>

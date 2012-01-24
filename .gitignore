@@ -19,3 +19,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ingore cache file
+*-cache

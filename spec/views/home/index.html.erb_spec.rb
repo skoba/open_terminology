@@ -1,5 +1,11 @@
 require 'spec_helper'
 
 describe "home/index.html.erb" do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before(:each) do
+    render template: 'home/index.html.erb'
+  end
+
+  it 'response success' do
+    rendered.should =~ /Home/
+  end
 end

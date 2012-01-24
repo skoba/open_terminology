@@ -5,7 +5,7 @@ gem 'rails', '3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 gem 'pg'
 gem 'devise'
 
@@ -27,7 +27,7 @@ gem 'jquery-rails'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
-# gem 'jbuilder'
+gem 'jbuilder'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -43,9 +43,11 @@ group :development, :test do
   gem 'spork' , '~> 1.0rc'
   gem 'spork-rails'
   gem 'guard-spork'
+  gem 'guard-livereload'
   gem 'simplecov'
   gem 'libnotify'
   gem 'ruby-debug19' #, :require => 'ruby-debug'
   gem 'fabrication'
   gem 'forgery'
+  gem 'rails3-generators'
 end

@@ -1,4 +1,54 @@
-== Open terminology
+= Open terminology
 
-This project is terminology service as open source software.
-Everybody can edit terminology for use.
+Open terminology project aims to construct a terminology system,
+which is available under open license.
+* https://github.com/skoba/open_terminology
+
+= Version
+
+under constructing
+0.0.0
+
+= Requirements
+
+* Ruby 1.9.2 or later recommended
+* Tested with Ruby 1.9.3 on FreeBSD.
+* Rails 3.2
+* PostgreSQL version 8.2 or later
+
+= Description
+
+This is a part of the Ruby openEHR implementation project.
+* http://github.com/skoba/ruby-impl-openehr
+
+= Authors
+* Main codes
+Shinji Kobayashi
+openEHR.jp, <http://openehr.jp>
+
+= Copyright
+The software, including all files in this directory and
+subdirectories is copyrighted to the original authors and
+contributors, 2011.
+
+All Rights Reserved.
+
+= License
+
+This product is under Apache 2.0 license
+
+   Copyright [2012] Shinji Kobayashi, openEHR.jp
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+

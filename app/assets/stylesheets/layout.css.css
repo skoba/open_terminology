@@ -1,0 +1,33 @@
+#banner {
+  background: #9c9;
+  padding: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #282;
+  text-align: cneter; }
+  #banner img {
+    float: left; }
+
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif; }
+
+#columns {
+  background: #141; }
+  #columns #main {
+    margin-left: 17em;
+    padding: 1em;
+    background: white; }
+  #columns #side {
+    float: left;
+    padding: 1em 2em;
+    width: 13em;
+    background: #141; }
+    #columns #side form, #columns #side div {
+      display: inline; }
+    #columns #side input {
+      font-size: small; }
