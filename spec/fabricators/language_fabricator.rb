@@ -1,4 +1,4 @@
 Fabricator(:language) do
-  code { 'ja' }
-  description { 'Japanese' }
+  code 'ja'
+  description 'Japanese'
 end
