@@ -24,7 +24,7 @@ describe LanguagesController do
   # Language. As you add validations to Language, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {code: 'ja', description: 'Japanese'}
   end
   
   # This should return the minimal set of values that should be in the session

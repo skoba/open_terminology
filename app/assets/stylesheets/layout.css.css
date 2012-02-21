@@ -1,9 +1,9 @@
 #banner {
-  background: #9c9;
+  background: #b0c4de;
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  color: #4682b4;
   text-align: cneter; }
   #banner img {
     float: left; }
@@ -17,7 +17,7 @@
   font: bold smaller sans-serif; }
 
 #columns {
-  background: #141; }
+  background: #d3d3d3; }
   #columns #main {
     margin-left: 17em;
     padding: 1em;
@@ -26,8 +26,15 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141; }
+    background: #d3d3d3; }
     #columns #side form, #columns #side div {
       display: inline; }
     #columns #side input {
       font-size: small; }
+    #columns #side ul {
+      padding: 0; }
+      #columns #side ul li {
+        list-style: none; }
+        #columns #side ul li a {
+          color: #696969;
+          font-size: small; }

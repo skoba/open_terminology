@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120201141611) do
+ActiveRecord::Schema.define(:version => 20120221012929) do
+
+  create_table "concepts", :force => true do |t|
+    t.string   "concept_id"
+    t.string   "rubric"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "language_id"
+  end
 
   create_table "issuers", :force => true do |t|
     t.string   "vsab"
