@@ -20,4 +20,3 @@ production:
   encoding: unicode
   username: ang
   password: ehr
-  host: localhost
