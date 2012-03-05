@@ -3,9 +3,9 @@ require 'spec_helper'
 describe "concepts/edit" do
   before(:each) do
     @concept = assign(:concept, stub_model(Concept,
-      :language => "MyString",
-      :concept_id => "MyString",
-      :rubric => "MyString"
+      :language_id => '0',
+      :concept_id => "0",
+      :rubric => "self"
     ))
   end
 

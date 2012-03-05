@@ -12,7 +12,7 @@
 
 <% @concepts.each do |concept| %>
   <tr>
-    <td><%= concept.language %></td>
+    <td><%= concept.language.code %></td>
     <td><%= concept.concept_id %></td>
     <td><%= concept.rubric %></td>
     <td><%= link_to 'Show', concept %></td>

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 Fabricator(:concept) do
-  language 'ja'
+  language_id 68
   concept_id '0'
   rubric '自己'
 end

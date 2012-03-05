@@ -25,7 +25,7 @@ describe ConceptsController do
   # Concept. As you add validations to Concept, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    { language: 'ja', concept_id: '0', rubric: '自己'}
+    { language_id: '41', concept_id: '0', rubric: 'self' }
   end
   
   # This should return the minimal set of values that should be in the session

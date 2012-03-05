@@ -1,4 +1,4 @@
 class Language < ActiveRecord::Base
   validates_presence_of :code, :description
-  belongs_to :concept
+  has_one :concept
 end

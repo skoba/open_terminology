@@ -35,6 +35,7 @@ class ConceptsController < ApplicationController
   # GET /concepts/1/edit
   def edit
     @concept = Concept.find(params[:id])
+    @languages = Language.all.collect { |l| l.code}
   end
 
   # POST /concepts

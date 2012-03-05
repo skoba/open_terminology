@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :language %><br />
-    <%= f.text_field :language %>
+    <%= select @concept, :language_id, @languages %>
   </div>
   <div class="field">
     <%= f.label :concept_id %><br />

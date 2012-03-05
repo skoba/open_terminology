@@ -3,9 +3,9 @@ require 'spec_helper'
 describe "concepts/show" do
   before(:each) do
     @concept = assign(:concept, stub_model(Concept,
-      :language => "Language",
-      :concept_id => "Concept",
-      :rubric => "Rubric"
+      :language_id => 41,
+      :concept_id => "0",
+      :rubric => "self"
     ))
   end
 

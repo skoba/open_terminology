@@ -3,9 +3,9 @@ require 'spec_helper'
 describe "concepts/new" do
   before(:each) do
     assign(:concept, stub_model(Concept,
-      :language => "MyString",
-      :concept_id => "MyString",
-      :rubric => "MyString"
+      :language_id => 41,
+      :concept_id => "0",
+      :rubric => "self"
     ).as_new_record)
   end
 
