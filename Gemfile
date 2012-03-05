@@ -10,6 +10,7 @@ gem 'pg'
 gem 'devise'
 gem 'xml-simple'
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -51,4 +52,8 @@ group :development, :test do
   gem 'fabrication'
   gem 'forgery'
   gem 'rails3-generators'
+end
+
+group :production do
+  gem 'thin'
 end
