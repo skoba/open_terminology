@@ -16,15 +16,19 @@ require 'xmlsimple'
 #   {language: item['Language'], concept_id: item['ConceptID'], rubric: item['Rubric']}
 # end
 # concepts = Concept.create(concept_seed)
-openehr_term = XmlSimple.xml_in(File.open('db/seeds/openehr_terminology_en.xml'))
-external_term = XmlSImple.xml_in(File.open('db/seeds/openehr_terminology_en.xml'))
-language_seed = external_term['codeset'][2]['code'].map do |lang|
+openehr_terms = XmlSimple.xml_in(File.open('db/seeds/openehr_terminology_en.xml'))
+external_terms = XmlSimple.xml_in(File.open('db/seeds/external_terminologies_en.xml'))
+language_seed = external_terms['codeset'][2]['code'].map do |lang|
   { code: lang['value'], description: lang['Description'] }
 end
 Language.create(language_seed)
 
-media_type_seed = external_term['codeset'][3]['code'].map do |type|
+media_type_seed = external_terms['codeset'][3]['code'].map do |type|
   { value: type['value'] }
 end
 MediaType.create(media_type_seed)
 
+country_seed = external_terms['codeset'][0]['code'].map do |country|
+  { code: country['value'], description: country['description'] }
+end
+Country.create(country_seed)

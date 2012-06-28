@@ -1,4 +1,6 @@
 Terminology::Application.routes.draw do
+  resources :countries
+
   resources :media_types
 
   resources :languages
