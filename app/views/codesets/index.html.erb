@@ -12,7 +12,7 @@
 
 <% @codesets.each do |codeset| %>
   <tr>
-    <td><%= codeset.issuer_id %></td>
+    <td><%= codeset.issuer.name %></td>
     <td><%= codeset.openehr_id %></td>
     <td><%= codeset.external_id %></td>
     <td><%= link_to 'Show', codeset %></td>

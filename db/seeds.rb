@@ -32,3 +32,27 @@ country_seed = external_terms['codeset'][0]['code'].map do |country|
   { code: country['value'], description: country['description'] }
 end
 Country.create(country_seed)
+
+openehr_terms['codeset'].map do |codesets|
+  issuer = Issuer.create( name: codesets['issuer'])
+  codeset = Codeset.create(issuer_id: issuer.id,
+                           openehr_id: codesets['openehr_id'],
+                           external_id: codesets['external_id'])
+
+  codesets['code'].map do |codes|
+    codes.map do |code|
+      Code.create(codeset_id: codeset.id,
+                  value: code[1])
+    end
+  end
+end
+
+openehr_terms['group'].each do |concepts|
+  group = Group.create(name: concepts['name'])
+
+  concepts['concept'].map do |concept|
+    Concept.create(code: concept['id'],
+                   group_id: group.id,
+                   rubric: concept['rubric'])
+  end
+end

@@ -1,0 +1,27 @@
+<h1>Listing concepts</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Rubric</th>
+    <th>Group</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @concepts.each do |concept| %>
+  <tr>
+    <td><%= concept.code %></td>
+    <td><%= concept.rubric %></td>
+    <td><%= concept.group.name %></td>
+    <td><%= link_to 'Show', concept %></td>
+    <td><%= link_to 'Edit', edit_concept_path(concept) %></td>
+    <td><%= link_to 'Destroy', concept, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Concept', new_concept_path %>
