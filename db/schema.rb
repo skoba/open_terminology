@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120628064235) do
+ActiveRecord::Schema.define(:version => 20120628123309) do
+
+  create_table "codesets", :force => true do |t|
+    t.integer  "issuer_id"
+    t.string   "openehr_id"
+    t.string   "external_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "countries", :force => true do |t|
     t.string   "code"
@@ -21,6 +29,12 @@ ActiveRecord::Schema.define(:version => 20120628064235) do
   end
 
   create_table "identifiers", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "issuers", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

@@ -1,0 +1,23 @@
+<h1>Listing issuers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @issuers.each do |issuer| %>
+  <tr>
+    <td><%= issuer.name %></td>
+    <td><%= link_to 'Show', issuer %></td>
+    <td><%= link_to 'Edit', edit_issuer_path(issuer) %></td>
+    <td><%= link_to 'Destroy', issuer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Issuer', new_issuer_path %>

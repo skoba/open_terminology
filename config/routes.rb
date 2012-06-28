@@ -1,4 +1,8 @@
 Terminology::Application.routes.draw do
+  resources :codesets
+
+  resources :issuers
+
   resources :countries
 
   resources :media_types

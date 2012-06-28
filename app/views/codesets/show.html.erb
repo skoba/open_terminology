@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Issuer:</b>
+  <%= @codeset.issuer_id %>
+</p>
+
+<p>
+  <b>Openehr:</b>
+  <%= @codeset.openehr_id %>
+</p>
+
+<p>
+  <b>External:</b>
+  <%= @codeset.external_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_codeset_path(@codeset) %> |
+<%= link_to 'Back', codesets_path %>

@@ -1,0 +1,27 @@
+<h1>Listing codesets</h1>
+
+<table>
+  <tr>
+    <th>Issuer</th>
+    <th>Openehr</th>
+    <th>External</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @codesets.each do |codeset| %>
+  <tr>
+    <td><%= codeset.issuer_id %></td>
+    <td><%= codeset.openehr_id %></td>
+    <td><%= codeset.external_id %></td>
+    <td><%= link_to 'Show', codeset %></td>
+    <td><%= link_to 'Edit', edit_codeset_path(codeset) %></td>
+    <td><%= link_to 'Destroy', codeset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Codeset', new_codeset_path %>

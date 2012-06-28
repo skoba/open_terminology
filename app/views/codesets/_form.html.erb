@@ -1,0 +1,29 @@
+<%= form_for(@codeset) do |f| %>
+  <% if @codeset.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@codeset.errors.count, "error") %> prohibited this codeset from being saved:</h2>
+
+      <ul>
+      <% @codeset.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :issuer_id %><br />
+    <%= f.number_field :issuer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :openehr_id %><br />
+    <%= f.text_field :openehr_id %>
+  </div>
+  <div class="field">
+    <%= f.label :external_id %><br />
+    <%= f.text_field :external_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
