@@ -12,19 +12,6 @@ describe "languages/show" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Code/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Description/)
-  end
-
-  it 'hide notice if notice is nil' do
-    flash[:notice] = nil
-    render
-    rendered.should_not match /notice/i
-  end
-
-  it 'appear notice' do
-    flash[:notice] = 'test'
-    render
-    rendered.should match /test/
   end
 end

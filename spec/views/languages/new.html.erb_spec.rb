@@ -3,8 +3,8 @@ require 'spec_helper'
 describe "languages/new" do
   before(:each) do
     assign(:language, stub_model(Language,
-      :code => "ja",
-      :description => "Japanese"
+      :code => "MyString",
+      :description => "MyString"
     ).as_new_record)
   end
 
